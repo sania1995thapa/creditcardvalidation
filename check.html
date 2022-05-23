@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validation</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,200&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="check.html">CHECK VALIDITY</a></li><li><a href="summary.html">SUMMARY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+        <div class="text-box">
+        <h2>Validation Check </h2>
+        
+        </div>
+    </section>
+
+    <section class="check-card">
+                  <div class="col">
+        <p>Here, we've come together to check your card number. 
+                Lets see have you entered valid card number or not.
+                Don't terify just verify </p>
+                      
+        </div>  
+               
+        <div class="row">
+            <div class="check-col">
+                
+                <h3>How can it tell if a card number is valid?</h3>
+                <p> 
+Debit and credit card numbers that are legal and valid are always divisible by 10. Created by mathematician Hans Peter Luhn in 1954, this formula is now public knowledge. Figuring out whether your card is indeed valid isn't necessarily straightforward, but you can do so by following the following steps: <br>
+
+Step 1: Beginning with the very first digit in the 16 number sequence, double every second number. 
+<br>
+Step 2: Take any double digits that you come up with after doubling and separate them into their individual values. For example, 15 would become one and five.
+<br>
+Step 3: Find the total sum of the resulting numbers that remain after the previous step. 
+<br>
+Step 4: With the numbers that didn't double in the first step, add them together to find the total sum. 
+<br>
+Step 5: Add together the results from the third and the fourth steps.
+<br>
+Step 6: Divide the results from the previous step by 10. 
+<br>
+                    And there you go. If the final product ends in zero, congratulations. Your card is valid. </p>
+            </div>
+<img src="images/Signature_Debit_Card.jpg">
+       
+        </div>
+    </section>
+
+    <section class="col">
+        
+        <div class="row">
+        So let's give a try see did you put 
+        </div>
+    
+         <form action="/url" method="get">
+                    
+                        <p>Please enter your card number:</p>
+                        
+                        <input type="number" name="Card Number" placeholder="Enter your card number" required>
+                        <button type="submit">Submit</button>
+                    </form>
+    </section>
+
+    <!-----------foooter----------->
+     <section class="footer">
+        <h5>Group Project Under the Guidance of Prof. (Dr) Pankaj Vaidya.</h5>
+        <h5>Team Member: 
+            <br>Kashish Sahni: GF202112223
+            <br>Sania Thapa: GF202112588
+            <br>Shivani Thakur: GF20211347
+            <br>Varun: GF202111507
+        </h5>
+        <h2> Thank You
+        </h2>
+    </section>
+    <!-------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.stlye.right = "0px";
+        }
+
+        function hideMenu() {
+            navLinks.stlye.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

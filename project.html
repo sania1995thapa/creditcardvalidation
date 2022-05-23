@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validation</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,200&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="check.html">CHECK VALIDITY</a></li>
+                    <li><a href="summary.html">SUMMARY</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+        <div class="text-box">
+        <h2>Project</h2>
+        <p>We going to discuss breifly about our project. So scroll down to know why we chose this porject and how it will help you.<br>
+        </p>
+        </div>
+    </section>
+
+    <section class="check-card">
+                  <div class="col">
+        <p>Nearly everyone has some form of a banking card. They’re small to carry, super easy to use when spending or depositing money, and they save you from having to lug around wads of cash. And it all happens with just a quick swipe or tap. <br>It is certainly worth knowing the details around credit and debit cards, and it is especially important to  understand the numbers on credit cards. Credit and debit cards have a total of 16 digits printed on the front, though a card can have as many as 19 digits or as little as 13. Like a secret code, card numbers represent different business and personal financial information related to the card owner and the card issuer. </p>
+                      
+        </div>  
+               
+        <div class="row">
+            <div class="check-col">
+                
+            
+                <h3>Front of the Card</h3>
+                <p>Bank branding: This refers to who issued the card. <br>Your card will say either “Debit/Access Card” or “Credit Card” along the top. 
+                <br><b>Card number:</b> This is the entire 16-digit sequence printed on the front surface and is one of the pieces of information you’re required to hand over when shopping online.
+                <br><b>Cardholder’s name:</b> This is also known as the person who is authorized to use the card. 
+                <br><b>Smart chip:</b> This is the small metallic-looking square typically on the left side of the card. It is there for security purposes. 
+                <br><b>Expiration date:</b>This appears in smaller print below the row of 16 digits. Like driver’s licenses, cards are only good for a certain amount of time. Before the expiration date arrives, the bank will mail you a new one. 
+                <br><b>Payment network logo:</b> This refers to the type of card you are using, such as Visa, MasterCard, American Express, etc. Here, you can see instead of "BANK" written on top right corner as an example of bank logo.</p>
+               
+            </div>
+
+            </div>
+            <div class="check-col">
+                <h3>Back of the Card</h3>
+                <p>While debit and credit card numbers are mainly on the front side, the back of the card also features critical information.
+                <br><b>Magnetic stripe:</b> The strip that runs across the width of the card is arguably the back’s most notable feature.<br> Whenever you swipe your card, the card reader scans or “reads” this stripe to collect various pieces of information about both the cardholder and the account.<br> Each time someone swipes a card, the reader knows whether or not the card has expired.<br> The strip also denotes whether the account associated with the card has sufficient funds for that particular transaction.
+                <br><b>Hologram:</b> This is the small, three-dimensional image near one of the bottom corners of the card. It serves as a security measure first and foremost; these are very hard for counterfeiters to fake.
+                <br><b>Signature panel:</b> Every card, debit or credit, must be signed by the card owner before it’s officially ready for use.
+                <br><b>Security codes:</b> The security code on a credit or debit card, <br>also known as the CVV, is a group of three digits included below the magnetic stripe and certifies that the card is indeed valid. 
+            </p>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------foooter----------->
+     <section class="footer">
+        <h5>Group Project Under the Guidance of Prof. (Dr) Pankaj Vaidya.</h5>
+        <h5>Team Member: 
+            <br>Kashish Sahni: GF202112223
+            <br>Sania Thapa: GF202112588
+            <br>Shivani Thakur: GF20211347
+            <br>Varun: GF202111507
+        </h5>
+        <h2> Thank You
+        </h2>
+    </section>
+    <!-------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.stlye.right = "0px";
+        }
+
+        function hideMenu() {
+            navLinks.stlye.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validation</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,200&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+    
+        <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="project.html.html">PROJECT</a></li>
+                    <li><a href="check.html">CHECK VALIDITY</a></li>
+                    <li><a href="summary.html">SUMMARY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu" ></i>
+            </nav>
+            
+            <div class="text-box">
+            <h1>Credit and Debit Card Validation</h1>   
+            <br>
+                <br>
+                <br>
+                <p>This program is for check the your credit or debit card number validation. 
+            <br>We build this program with help of C++ and Luhn's Alogrithm.<br>
+            This project is done under the guidance of Prof. (Dr) Pankaj Vaidya.
+            Team Members:
+                Kashish Sahni
+                Sania Thapa
+                Shivani Thakur
+                Varun</p>
+            </div>
+        </section>
+        
+        
+        <!------Cash Card----->
+        <section class="Card">
+        
+            <h2>Cash Cards</h2>
+            
+            <p>A cash card is an electronic payment card that stores cash for various types of payments. Cash cards may include <br> bank debit cards, prepaid debit cards, gift cards, and payroll cards. <br>They do not include credit cards since credit cards
+            are a form of debt rather than cash.</p>
+            <p>Cards can be classified on the basis of their issuance, usage and payment by the card holder. <br>There are three types of cards: Debit Card, Credit Card and Prepaid Card.<br> These cards can be issued by banks or other entities too. We will discuss
+            each type of card and the issuance authority for particular type of card.
+            </p>
+            
+            
+            <div class="row">
+            
+                <div class="Card-col">
+                
+                    <h3>Debit Card</h3>
+                    <p>Debit Card means the card which can be used to withdraw cash up to the limit present in customer's bank account. They are also known as bank card, plastic card or check card. These are issued by banks only. this card can be used domestically
+                    and internationally (provided it is enabled for international use.)</p>
+                <img src="images/world-debit-card_600x338.png">
+                </div>
+                
+                <div class="Card-col">
+                
+                    <h3>Credit Card</h3>
+                    <p>Unlike debit cards, in case of credit cards, a customer can also withdraw beyond the amount of money present in its bank account. But there is a limit for each credit card up to which extra money can be withdraw and also time limit up
+                    to whihc the extra money withdran should be paid back. These are issued by banks or other entitites approved by RBI. These cards can also be used domestiocally and internationally.</p>
+                <img src="images/card-image-standard-credit-card.png">
+                </div>
+                
+                <div class="Card-col">
+                
+                    <h3>Prepaid Card</h3>
+                    <p> These cards can be issued by banks and non-banks. for issuning this card the customer has to pay the amount in advance whihc is then stored in his prepaid card to be used whenever required. The type of card is never linked to your bank
+                    account. Maximum amount to be stored is Rs 1,00,000. These cards can be used only domestically.</p>
+                <img src="images/consumer-prepaid-mastercard-card_1280x720.png">
+                </div>
+                
+            </div>
+        </section>
+        
+        <!----Project----->
+        <section class="Project">
+        
+            <h2>Project</h2>
+            <div class="row">
+                <div class="problem-col">
+                    <h3>What is the actual problem then?</h3>
+                    <p>We usually get numerous calls from the banks whether they are state banks or private of non-bank authorities, for convincing us to make credit card. Most of us does not answer the call or hang up in middle. But still there are people who listen the to them and their so called "beneficial" schemes they might get and those people listening to the caller agrees to make their credit card. But have it came across your mind that the credit card or debit card that you'er making just by hearing some agents are they geniune one? Because there are many chances that those agents are non other than fraudsters and they have given you fake credit card with fake card number on it!? But the question arises now that, how will someone check that the credit card they are having its number is fake or not?</p>
+                    
+                    <h3>We have you'er problem's solution!</h3>
+                    <p>Here on this website and even right now you can check whether the credit card or debit card you are having the and number on it is valid or not. or you are having fake card number. 
+                    The Card Number Validation helps you verify your card number validation. This is program created on C++ with Luhn's Algorithm to test the validity of thecard number your are having.
+                    It is very simple, you've jsut to enter you card number below given form and our program will rectify whether you have enter valid card number or not.
+                    So let's try!.</p>
+                    
+                
+                </div>
+            </div>
+        </section>
+        
+        <section class="Validity">
+        
+            <div class="Valid-col">
+            
+                <h2>Card Number Validation</h2>
+                <p>Here, we've come together to check your card number. 
+                Lets see have you entered valid card number or not.
+                Don't terify just verify</p>
+                <p>We suggest to have a try of card number validation. </p>
+                
+                <div class="form-col">
+                
+                    <form action="/url" method="get">
+                    
+                        <p>Please enter your card number:</p>
+                        
+                        <input type="number" name="Card Number" placeholder="Enter your card number" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-----Summary/fotter----->
+        <section class="Sources">
+        <div class="soruces-col">
+            <h2>Summary</h2>
+            <p>Through this project we got introduced and learnt about Luhn's algorithm <br>that is used in checking the validation of any cash card number. <br>It can help us to prevent getting wrong or duplicate card number <br>(mistakeningly or intentionally
+                from the banks non-banks authorities, respectively).</p>
+
+        </div>
+    </section>
+
+    <!-----------foooter----------->
+    <section class="footer">
+       
+        <h2> Thank You
+        </h2> <h5>Group Project Under the Guidance of Prof. (Dr) Pankaj Vaidya.</h5>
+        <h5>Team Member: 
+            <br>Kashish Sahni: GF202112223
+            <br>Sania Thapa: GF202112588
+            <br>Shivani Thakur: GF20211347
+            <br>Varun: GF202111507
+        </h5>
+    </section>
+      <!-------JavaScript for Toggle Menu---->
+<script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        </script>
+    </body>
+</html>
